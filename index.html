@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>โปรไฟล์นักศึกษา - วศิน คําธัญญา</title>
     <style>
-        /* นำเข้าฟอนต์ Prompt จาก Google Fonts เพื่อให้แสดงผลภาษาไทยได้สวยงาม */
+        /* นำเข้าฟอนต์ Prompt จาก Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
         * {
@@ -45,7 +45,7 @@
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            /* ปรับตำแหน่งรูปภาพ โฟกัสไปที่ใบหน้าจากภาพต้นฉบับ */
+            /* ปรับตำแหน่งแกน Y เป็น 12% เพื่อให้โฟกัสที่ใบหน้าพอดี */
             object-position: center 12%; 
             border: 5px solid #4a90e2;
             padding: 3px;
@@ -88,7 +88,7 @@
         .detail-label {
             font-weight: 500;
             color: #333333;
-            min-width: 90px;
+            min-width: 95px; /* ปรับความกว้างเล็กน้อยเพื่อให้รองรับคำว่า มหาวิทยาลัย */
             margin-right: 10px;
         }
 
@@ -102,26 +102,16 @@
             color: #357abd;
             text-decoration: underline;
         }
-
-        .university-badge {
-            margin-top: 25px;
-            font-size: 14px;
-            color: #777777;
-            font-weight: 400;
-        }
     </style>
 </head>
 <body>
 
     <div class="profile-card">
-        <!-- ส่วนแสดงรูปภาพ: เราได้เปลี่ยนชื่อไฟล์อ้างอิงเป็น profile.jpg เพื่อแก้ปัญหารูปไม่ขึ้น -->
         <img src="profile.jpg" alt="รูปโปรไฟล์ วศิน คําธัญญา" class="profile-img">
         
-        <!-- ชื่อและรหัสนักศึกษา -->
         <h1 class="name">วศิน คําธัญญา</h1>
         <div class="student-id">รหัส: 694245009</div>
 
-        <!-- รายละเอียดการติดต่อและข้อมูลการศึกษา -->
         <div class="details-container">
             <div class="detail-item">
                 <span class="detail-label">เบอร์โทรศัพท์:</span> 
@@ -139,11 +129,10 @@
                 <span class="detail-label">คณะ:</span> 
                 <span>วิทยาศาสตร์และเทคโนโลยี</span>
             </div>
-        </div>
-
-        <!-- ตราสัญลักษณ์มหาวิทยาลัย -->
-        <div class="university-badge">
-            มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง
+            <div class="detail-item">
+                <span class="detail-label">มหาวิทยาลัย:</span> 
+                <span>ราชภัฏหมู่บ้านจอมบึง</span>
+            </div>
         </div>
     </div>
 
