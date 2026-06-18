@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>โปรไฟล์นักศึกษา - วศิน คําธัญญา</title>
     <style>
-        /* นำเข้าฟอนต์ Prompt จาก Google Fonts */
+        /* นำเข้าฟอนต์ Prompt จาก Google Fonts เพื่อให้แสดงผลภาษาไทยได้สวยงาม */
         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
         * {
@@ -45,7 +45,7 @@
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            /* ปรับตำแหน่งแกน Y เป็น 12% เพื่อให้โฟกัสที่ใบหน้าพอดี */
+            /* ปรับตำแหน่งรูปภาพ โฟกัสไปที่ใบหน้าจากภาพต้นฉบับ */
             object-position: center 12%; 
             border: 5px solid #4a90e2;
             padding: 3px;
@@ -114,14 +114,14 @@
 <body>
 
     <div class="profile-card">
-        <!-- ใช้ชื่อไฟล์รูปภาพใหม่ที่ไม่มีช่องว่างเพื่อป้องกันรูปแตกบน GitHub -->
+        <!-- ส่วนแสดงรูปภาพ: เราได้เปลี่ยนชื่อไฟล์อ้างอิงเป็น profile.jpg เพื่อแก้ปัญหารูปไม่ขึ้น -->
         <img src="profile.jpg" alt="รูปโปรไฟล์ วศิน คําธัญญา" class="profile-img">
         
         <!-- ชื่อและรหัสนักศึกษา -->
         <h1 class="name">วศิน คําธัญญา</h1>
         <div class="student-id">รหัส: 694245009</div>
 
-        <!-- รายละเอียดข้อมูลส่วนตัว -->
+        <!-- รายละเอียดการติดต่อและข้อมูลการศึกษา -->
         <div class="details-container">
             <div class="detail-item">
                 <span class="detail-label">เบอร์โทรศัพท์:</span> 
@@ -141,6 +141,7 @@
             </div>
         </div>
 
+        <!-- ตราสัญลักษณ์มหาวิทยาลัย -->
         <div class="university-badge">
             มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง
         </div>
