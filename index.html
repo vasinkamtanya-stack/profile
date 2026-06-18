@@ -15,7 +15,6 @@
         }
 
         body {
-            /* เปลี่ยนมาใช้ฟอนต์ Prompt */
             font-family: 'Prompt', sans-serif;
             background-color: #e9ecef;
             display: flex;
@@ -46,6 +45,8 @@
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
+            /* ปรับตำแหน่งแกน Y เป็น 12% เพื่อให้โฟกัสที่ใบหน้าจากภาพ pic line.jpg */
+            object-position: center 12%; 
             border: 5px solid #4a90e2;
             padding: 3px;
             margin-bottom: 20px;
@@ -113,7 +114,7 @@
 <body>
 
     <div class="profile-card">
-        <!-- รูปโปรไฟล์อ้างอิงไฟล์ pic line.jpg -->
+        <!-- ดึงไฟล์ภาพ pic line.jpg มาแสดงผลโดยตรง -->
         <img src="pic line.jpg" alt="รูปโปรไฟล์ วศิน คําธัญญา" class="profile-img">
         
         <!-- ชื่อและรหัสนักศึกษา -->
